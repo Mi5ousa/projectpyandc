@@ -1,7 +1,7 @@
 import ctypes
 
 # carrega a biblioteca
-lib = ctypes.CDLL("./libcalc.dylib")  # ou "./libcalc.so" no Linux/Termux
+lib = ctypes.CDLL("./libcalc.dylib")  # ou "./libcalc.so" no Linux
 
 # define argumentos e retorno (opcional, mas recomendado)
 lib.multiplica.argtypes = [ctypes.c_int, ctypes.c_int]
